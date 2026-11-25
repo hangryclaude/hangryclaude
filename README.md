@@ -56,9 +56,9 @@ Things I built because one AI agent on its own is not enough.
 
 | Project | What it does | Proof |
 |---|---|---|
-| **gambit-lines** | Plans one job five ways, runs real checks, ranks what survives | 219 tests. Top plan scored 68 against 63 for a single plan, on 10 real jobs |
-| **claudecodex** | Claude and Codex debate who codes, then the other one reviews the diff | 111 test files. The blind-review rule is enforced in code |
-| **huddle** | Stops parallel Claude Code terminals editing the same file | Built on a measured gap: 1,070 file reservations, none overlapped |
+| **gambit-lines** | Plans one job five ways, runs real checks, ranks what survives | 219 tests, no dependencies. Checked on 10 real jobs |
+| **claudecodex** | Claude and Codex debate who codes, then the other one reviews the diff | 2,171 tests |
+| **huddle** | Stops parallel Claude Code terminals editing the same file | A daemon plus hooks that join every terminal and gate each edit |
 | **task-split** | One task splits into an animated tree of Claude terminals | One HTML file, demo and live modes |
 | **claude-token-forensics** | A local proxy that measures what Claude Code sends and caches | Dated findings, including the ones that came back negative |
 | [**dyslexic-mode**](https://github.com/hangryclaude/dyslexic-mode) | A terminal AI that thinks and answers the way a dyslexic reader needs | Runs with `npx`. 44 tests |
@@ -71,15 +71,15 @@ I want to be a world-class AI red-teamer. These are the reps.
 |---|---|---|
 | **agent-mirror** | A honeypot that gets a hacking AI agent to report on itself | A recorded run where Claude Code carried the canary into its own report |
 | [**api-key-crawler**](https://github.com/hangryclaude/api-key-crawler) | Stops API keys reaching GitHub, even with `--no-verify` | Go. 170 test files. 35.5 ms per commit |
-| **redteam-course** | Hands-on labs that attack local models and score every hit | 26 runnable lab scripts with canary scoring |
+| **redteam-course** | Hands-on labs that attack local models and score every hit | 27 units of runnable labs with canary scoring |
 
 ## Odd and Fun
 
 | Project | What it does | Proof |
 |---|---|---|
 | [**flyby**](https://github.com/hangryclaude/flyby) | Finds where a video was filmed from the planes you can hear in it | Placed the reference clip 26 m from the true spot |
-| **stark** | Control your Mac with hand gestures through the webcam | Native Swift and Apple Vision. 0.3% CPU |
-| **sourcescan** | Tells you the most to pay for a thrift find, from eBay survival curves | Kaplan-Meier with Greenwood intervals |
+| **stark** | Control your Mac with hand gestures through the webcam | Native Swift and Apple Vision. 25 self-test fixtures |
+| **sourcescan** | Tells you the most to pay for a thrift find, from eBay survival curves | Kaplan-Meier with Greenwood intervals. 269 tests |
 
 ## How I Work
 
